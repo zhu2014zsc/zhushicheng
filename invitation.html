@@ -15,23 +15,60 @@
 
 <body>
     <div class="container" style="background-color: #ebdc80;">
-
         <div class="row justify-content-md-center" style="padding-top: 10px;">
             <h1> 邀请名单</h1>
         </div>
 
-        <div class="col-sm-3">
-            <div class="input-group">
-                <div class="input-group-prepend">
-                    <span class="input-group-text">姓名</span>
+        <div class="row" style="padding-top: 30px;">
+            <div class="col-sm-3">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">姓名</span>
+                    </div>
+                    <input type="text" aria-label="First name" class="form-control" placeholder="输入姓名">
                 </div>
-                <input type="text" aria-label="First name" class="form-control" placeholder="输入姓名">
+            </div>
+            <div class="col-sm-3">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">电话</span>
+                    </div>
+                    <input type="text" aria-label="First name" class="form-control" placeholder="输入电话">
+                </div>
             </div>
 
+            <div>
+                <button type="button" class="btn btn-success">邀请</button>
+            </div>
         </div>
 
+        <div style="padding-top: 30px;padding-bottom: 30px;">
+            <a href="#" class="col-sm-2 btn btn-success">显示全部</a>
+            <a href="#" class="col-sm-2 btn btn-success">显示邀请中</a>
+            <a href="#" class="col-sm-2 btn btn-success">显示已接收</a>
+            <a href="#" class="col-sm-2 btn btn-success">显示已拒绝</a>
+        </div>
 
-
+        <div class="row" style="padding:15px">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>编号</th>
+                        <th>嘉宾信号</th>
+                        <th>嘉宾电话</th>
+                        <th>受邀电话</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <td>1</td>
+                    <td>zhushicheng</td>
+                    <td>1614566</td>
+                    <td>455646</td>
+                    <td>受邀</td>
+                </tbody>
+            </table>
+        </div>
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
