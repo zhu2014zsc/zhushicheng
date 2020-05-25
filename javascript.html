@@ -71,19 +71,13 @@
             weight: 75,
             score: null
         }
-
-        static_person.country = (){
-            alert("object can eat");
-        }
-
+         
         static_person.country = "china"
         if ('weight' in static_person) {
             document.writeln("<br>object have weight")
         } else {
             document.writeln("<br>object have not weight")
         }
-
-
 
         document.writeln('<br>');
         document.writeln(static_person.name);
@@ -95,20 +89,28 @@
         person.name = "zhushicheng";
         person.eat = function () {
             docunment.writeln('<br>')
-            document.writeln(person.name, " can eat ")
+            document.writeln(person.name, " can eat ");
         }
 
         person.eat()
 
-        var function_person=function_person(name){
-            this.name=name;
-            this.eat=function(){
-                document.writeln('<br>',name)
+        var function_person = function (name) {
+            this.name = name;
+            this.eat = function () {
+                document.writeln('<br>', name);
             }
         }
+            p = new function_person("zhangsan");
+            p.eat()
 
-        p=new function_person("zhangsan");
-        p.eat()
+            //map
+            var m=new Map([['zhuhshisheng',90],['zhuzhu0',70],['mingming',45]]);
+            document.writeln('<br>');
+            document.writeln(m.get('zhushicheng'));
+            m.delete('zhushicheng');
+            document.writeln('<br>');
+            document.writeln(m.get('zhushicheng'));
     </script>;
+</bidy>
 
 </html>
